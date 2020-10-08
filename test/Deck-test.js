@@ -29,4 +29,8 @@ describe('Deck', function() {
   it('should store a guess', function() {
     expect(deck.cards).to.deep.equal([card1, card2, card3]);
   });
+
+  it('should legally count cards', function() {
+    expect(deck.countCards()).to.equal(3);
+  })
 });
