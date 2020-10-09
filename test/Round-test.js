@@ -63,6 +63,6 @@ describe('Round', function() {
     round.takeTurn('Gotta be right');
     round.takeTurn('Totall');
     round.calculatePercentCorrect();
-    expect(round.endRound()).to.equal('** Round over! ** You answered 0% of the questions correctly!')
+    expect(round.endRound()).to.equal(null);
   })
 })
